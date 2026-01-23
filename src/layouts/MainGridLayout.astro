@@ -870,8 +870,14 @@ body.wallpaper-transparent #toc-inner-wrapper:has(table-of-contents[data-loaded=
 /* 桌面端 banner 模式下的主内容区域位置 */
 @media (min-width: 1280px) {
     body.enable-banner .absolute.w-full.z-30 {
-        top: 35vh !important;
+        top: calc(75vh + 15px) !important;
     }
+    body.enable-banner #banner-wrapper {
+        height: 100vh !important;
+        top: 0 !important;
+        transform: translateY(0) !important;
+    }
+
 }
 
 /* 移动端无侧边栏布局优化 */
